@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-function Cardc() {
+function Card() {
   const [data, setData] = useState([]);
 
   const getData = async () => {
