@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Card from "./Components/Card";
+import Filter from "./Components/Filter";
 import "./App.css";
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
   console.log(data);
   return (
     <>
+      <Filter />
       <Card />
     </>
   );
