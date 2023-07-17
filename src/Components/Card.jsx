@@ -19,20 +19,18 @@ function Card() {
   }, []);
 
   return (
-    <div className="card">
+    <div className="cards-container">
       {data.map((stay, i) => (
-        <div className="" key={i}>
-          <img src={stay.photo} alt="Imagen" />
-          <div className="card-details">
-            <span>{stay.city}, {stay.country}</span>
-            {stay.superHost && <span>Superhost</span>}
-            <h2>{stay.title}</h2>
-            <div className="card-info">
-              <span>{stay.rating}</span>
-              <span>{stay.maxGuests} guests</span>
-              <span>{stay.beds} beds</span>
-            </div>
+        <div className="card" key={i} style="width: 18rem">
+          <img className="card-img-top" src={stay.photo} alt="Imagen" />
+          <div className="card-body flex flex-row">
+            {stay.superHost && <span className="super">Superhost</span>}
+            <span>{stay.type}</span>
+            <span>{stay.rating}</span>
+            <span>{stay.maxGuests} guests</span>
+            <span>{stay.beds} beds</span>
           </div>
+          <h5 className="card-title">{stay.title}</h5>
         </div>
       ))}
     </div>
