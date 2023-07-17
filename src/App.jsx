@@ -27,10 +27,10 @@ function App() {
   // Puedes ver la variable data en consola.
   console.log(data);
   return (
-    <>
+    <div className="container">
       
       <Card />
-    </>
+    </div>
   );
 }
 

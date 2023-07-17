@@ -19,9 +19,9 @@ function Card() {
   }, []);
 
   return (
-    <div className="cards-container">
+    <div className="card">
       {data.map((stay, i) => (
-        <div className="card" key={i}>
+        <div className="" key={i}>
           <img src={stay.photo} alt="Imagen" />
           <div className="card-details">
             <span>{stay.city}, {stay.country}</span>
